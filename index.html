@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Technical Documentation</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Cascading Style Sheets</h1>
+      </header>
+      <a href="#Complementary_Colours" class="nav-link">Complementary Colours</a>
+      <a href="#Length_Units" class="nav-link">Length Units</a>
+      <a href="#Flexbox" class="nav-link">Flexbox</a>
+      <a href="#Utilities" class="nav-link">Utilities</a>
+      <a href="#Pseudo_Elements" class="nav-link">Pseudo Elements</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Complementary_Colours">
+        <header>
+          <h2>Complementary Colours</h2>
+        </header>
+        <p>These are colors that are at the opposite sides of a color wheel.</p>
+
+        <p>
+          When combined together they become grey. But, when positioned next to
+          each other they complement each other and give a nice visual contrast.
+        </p>
+        <p>
+          Hue represents the actual color in the light prism but denoted as an
+          angle in the color wheel.
+        </p>
+        <p>
+          Saturation indicates the amount of gray in the color represented as a
+          percentage.
+        </p>
+        <p>Lightness indicates the amount of white or black in the color.</p>
+        <code>repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px)</code>
+        <code>--title-color: #FF00FF;</code>
+        <code>--title-color: #FF00FF;</code>
+        <ol>
+          <li>Complementary Colurs</li>
+          <li>Primary Colors</li>
+          <li>Secondary Colours</li>
+          <li>Tertiary Colors</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Length_Units">
+        <header>
+          <h2>Length Units</h2>
+        </header>
+        <p>
+          Length or size properties of elements can be specified various units.
+          These units can be absolute or relative.
+        </p>
+        <p>
+          Absolute units are to be avoided as they don't scale based on the
+          device sizes.
+        </p>
+        <p>
+          Relative units are in relation to another element or the viewport.
+          These units can scale well on different devices.
+        </p>
+        <code>a[title] // anchor elements with title attribute set
+          a[href="www.example.org"] // <a> elements with href value set to www.example.org
+          a[href$=".org"] // <a> elements with href value ending ".org"
+          a[href*="example"] // <a> elements with href value containing "example"
+          input[type="checkbox"]</code>
+          <code>1vw=1% of viewport width</code>
+        <ul>
+          <li>em</li>
+          <li>rem</li>
+          <li>vw</li>
+          <li>vh</li>
+          <li>px</li>
+          <li>%</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Flexbox">
+        <header>
+          <h2>Flexbox</h2>
+        </header>
+        <p>
+          Setting the CSS display property to flex, enables to set flexbox
+          properties to an element.
+        </p>
+        <ol>
+          <li>flex-direction</li>
+          <li>flex-wrap</li>
+          <li>justify-content</li>
+          <li>align-items</li>
+        </ol>
+      </section>
+      <section class="main-section" id="Utilities">
+        <header>
+          <h2>Utilities</h2>
+        </header>
+        <p>
+          https://css-tricks.com/autoprefixer/ - Tool that add prefixes to the
+          CSS properties for compatibility with different browsers.
+        </p>
+        <ul>
+          <li>Auto Prefixer</li>
+          <li>Pesticide</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Pseudo_Elements">
+        <header>
+          <h2>Pseudo Elements</h2>
+        </header>
+        <p>
+          ::before and ::after pseudo classes require a content property to set
+          mandatorily. Usually this property refers to an image or a text.
+          However, when these pseudo classes are used to create shapes, the
+          property shall be set to empty string.
+        </p>
+        <p>
+          Using tabindex attribute on a non-interactive element will enable it
+          for this CSS pseudo class.
+        </p>
+        <code>p, div, h1 {... }</code>
+        <ol>
+          <li>::before</li>
+          <li>::after</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
